@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Regex Validator</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Regex Validator</h1>
+    <label>Email: <input type="text" id="emailInput"></label>
+    <button onclick="checkEmail()">Validate Email</button>
+    <p id="emailResult"></p>
+
+    <script>
+        function checkEmail() {
+            const email = document.getElementById("emailInput").value;
+            const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            document.getElementById("emailResult").innerText = regex.test(email) ? "✅ Valid" : "❌ Invalid";
+        }
+    </script>
+</body>
+</html>
