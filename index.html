@@ -1,21 +1,27 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Regex Validator</title>
-    <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGEX validator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./script.js"></script>
 </head>
 <body>
-    <h1>Regex Validator</h1>
-    <label>Email: <input type="text" id="emailInput"></label>
-    <button onclick="checkEmail()">Validate Email</button>
-    <p id="emailResult"></p>
-
-    <script>
-        function checkEmail() {
-            const email = document.getElementById("emailInput").value;
-            const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            document.getElementById("emailResult").innerText = regex.test(email) ? "✅ Valid" : "❌ Invalid";
-        }
-    </script>
+    <main>
+        <aside class="left-aside" id="content-area">
+        </aside>
+        <aside class="right-aside">
+            <h4>REGEX validator<br><center>brownstracey</center></h4>
+            <button id="email-button" class="button">Email</button>
+            <button id="url-button" class="button">Url</button>
+            <button id="phone-button" class="button">Phone</button>
+            <button id="time-button" class="button">Time</button>
+        </aside>
+    </main>
+    <footer>
+        <div class="names-container">
+            <span class="name">this regex validator was designed by BROWNS tracey</span>
+        </div>
+    </footer>
 </body>
-</html>
