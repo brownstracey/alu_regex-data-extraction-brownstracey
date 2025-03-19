@@ -15,6 +15,6 @@ It checks:
     git clone https://github.com/brownstracey/alu_regex-data-extraction-brownstracey.git
     ```
 
-3. Open `index.html` in your preferred web browser.
+3. Right click `index.html` and open in live server.
 
 `
